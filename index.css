@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+.project_name{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid;
+}
+.project_name h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #151515;
+}
+.result_section{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+.result_1 h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.result_1{
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+pre{
+    width: 80%;
+    height: calc(100vh - 120px);
+    overflow: auto;
+    border: 1px solid;
+    padding: 10px;
+    background-color: #000;
+    font-size: 15px;
+}
+.options{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.options select{
+    
+    padding: 10px;
+    font-size: 18px;
+}
+
+.hideyear{
+    width: 100%;
+    height: 0;
+    position: fixed;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+.hideyear .hideyearBox{
+    width: 0;
+    height: 0;
+}
+.hideyear .hideyearBox h3{
+    font-size: 0;
+    padding: 0;
+}
+.hideyear .hideyearBox input{
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin-top: 0;
+}
+.hidegetyear .hideyearBox button{
+    width: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+.getyear{
+    opacity: 1;
+    visibility: visible;
+    height: 100vh;
+    position: fixed;
+    background-color: #00000045;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.getyear .yearBox{
+    width: 400px;
+    height: 180px;
+    background-color: #fff;
+    transition: .3s;
+}
+.getyear .yearBox h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding: 5px;
+}
+.getyear .yearBox input{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background: #000000d0;
+    color: #fff;
+}
+.getyear .yearBox input::placeholder{
+    color: #fff;
+}
+.getyear .yearBox button{
+    width: 100px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 10px;
+    border: none;
+    float: right;
+    font-size: 17px;
+}
+#topCurly, #downCurly{
+    color: rgb(255, 174, 0);
+}
+#objKey{
+    color: #fff;
+}
+#objVal{
+    color: orange;
+}
+#colonal{
+    color: #fff;
+}
+@media (max-width: 800px) {
+    pre{
+        width: 100%;
+    }
+    .project_name h1{
+        font-size: 5vw;
+    }
+    .options select{
+        width: 90%;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css" />
+        <title>Optional - Functions & Objects</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="hideyear">
+                <div class="hideyearBox">
+                    <h3>Select year.</h3>
+                    <input type="number" id="year" placeholder="Enter year."/>
+                    <button id="submityear">select</button>
+                </div>
+            </div>
+            <div class="project_name"><h1>Optional - Functions & Objects</h1></div>
+            <div class="options">
+                <select id="select1" onchange="handleSelect()">
+                    <option value="Average Discount per Brand">Average Discount per Brand</option>
+                    <option value="Oldest Phone Model with Android OS">Oldest Phone Model with Android OS</option>
+                    <option value="Price After Discount">Price After Discount</option>
+                    <option value="Total Price of Phones Released After a Certain Year">Total Price of Phones Released After a Certain Year</option>
+                    <option value="Most Expensive Brand">Most Expensive Brand</option>
+                    <option value="default" selected>Default</option>
+                </select>
+            </div>
+            <div class="result_section">
+                <div class="result_1">
+                    <pre id="codeObj"></pre>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
